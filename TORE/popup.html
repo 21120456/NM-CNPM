@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TORE Extension</title>
+</head>
+<script src="popup.js"></script>
+
+<style>
+    .first {
+        background-color: #ffffff;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        font-family: "Lexend";
+        color: #091747;
+        position: fixed;
+        top: 20px;
+        width: 298px;
+        height: 30px;
+        padding: 7px;
+        border-radius: 5px;
+        padding-bottom: 1.5px;
+        display: inline-flex;
+    }
+    
+    .main {
+        background-color: #ffffff;
+        text-align: center;
+        font-size: 18px;
+        font-family: "Lexend";
+        color: #091747;
+        position: absolute;
+        top: 70px;
+        width: 298px;
+        height: 330px;
+        padding: 7px;
+        border-radius: 5px;
+    }
+    
+    body {
+        width: 310px;
+        height: 412px;
+        background-color: #5974B2;
+    }
+    
+    button {
+        background-color: #a3cbf1;
+        border-radius: 21px;
+        color: black;
+        text-align: center;
+        font-size: 13px;
+        width: 84px;
+        height: 23px;
+        font-family: "Lexend";
+    }
+    
+    img {
+        text-align: left;
+    }
+    
+    .text_header {
+        padding-left: 50px;
+    }
+    
+    .box {
+        width: 294px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 21px;
+        font-family: "Lexend";
+        font-size: 18px;
+        margin-top: 30px;
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <div class="first">
+        <img src="images/Item_top.png" width="30px">
+        <div class="text_header">TORE Extension</div>
+    </div>
+    <div id="title" class="header">
+        <div class="main">
+            <div class="button">
+                <button id="translateBtn">Translate</button>
+                <button>Revise</button>
+                <button>Summarize</button>
+            </div>
+
+            <div id="chat-box">
+                <textarea class="box" placeholder="Result" readonly disabled></textarea>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
